@@ -9,7 +9,7 @@ import getpass
 import os
 
 
-apikey="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"
+apikey="sk-proj-sS7DJOyJDJ1l12JZJGYtT3BlbkFJuZMxNP4PhFknmUA9C7pl"
 
 
 
