@@ -8,8 +8,9 @@ from langchain_core.runnables import RunnablePassthrough
 import getpass
 import os
 
-apikey=os.getenv("apikey")
-PINECONE_API_KEY=os.getenv("PINECONE_API_KEY")
+
+apikey="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"
+
 
 
 llm = ChatOpenAI(api_key=apikey,model="gpt-3.5-turbo-0125")
