@@ -9,8 +9,7 @@ import getpass
 import os
 
 
-apikey="sk-proj-sS7DJOyJDJ1l12JZJGYtT3BlbkFJuZMxNP4PhFknmUA9C7pl"
-
+apikey=os.getenv("apikey")
 
 
 llm = ChatOpenAI(api_key=apikey,model="gpt-3.5-turbo-0125")
