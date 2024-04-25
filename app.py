@@ -8,19 +8,15 @@ from langchain_core.runnables import RunnablePassthrough
 import getpass
 import os
 
-
-# apikey="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"
 apikey=os.getenv("apikey")
 PINECONE_API_KEY=os.getenv("PINECONE_API_KEY")
-# os.environ["apikey"] = getpass.getpass()
-# os.environ["PINECONE_API_KEY"] = getpass.getpass()
+
 
 llm = ChatOpenAI(api_key=apikey,model="gpt-3.5-turbo-0125")
 
 embeddings=OpenAIEmbeddings(openai_api_key=apikey)
 
-# PINECONE_API_KEY = "38f15772-6ab4-4f8c-b2c6-8b4e2c00f91e"
-# PINECONE_API_ENV = "testapi"
+
 
 index_name = "chatai"
 
