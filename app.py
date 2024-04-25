@@ -17,7 +17,7 @@ llm = ChatOpenAI(api_key=apikey,model="gpt-3.5-turbo-0125")
 embeddings=OpenAIEmbeddings(openai_api_key=apikey)
 
 
-
+PINECONE_API_KEY = "38f15772-6ab4-4f8c-b2c6-8b4e2c00f91e"
 index_name = "chatai"
 
 vectorstore = PineconeVectorStore(pinecone_api_key=PINECONE_API_KEY,index_name=index_name, embedding=embeddings)
